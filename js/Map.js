@@ -18,16 +18,16 @@ var __MAP__ = [
   '...AAAAAAAAAAAAA...................BBBBBBBBBB......',
   '.......AAAAAAAA......................BBBBBB........',
   '.......AAAAAAA.....................BBBBBBB.........',
-  '........AAAAAA.......................BBBBB.........',
+  '........AAA-AA.......................BBBBB.........',
   '.....................................BBBB..........',
   '........................................B..........',
   '........................................|..........',
   '...................................................',
-  '.................CCC....CCC..CCC...................',
-  '.................CCCCC.CCCCC.CCC...................',
-  '................CCCCCCCCCCCCCCCC...................',
-  '.................CCCCCCCCCCCCCCC........|..........',
-  '................CCCCCCCCCCCCCCCCCCCCCCCCCC.........',
+  '..................CC....CCC..CCC...................',
+  '...........-CCCCCCCCCC.CCCCC.CCC...................',
+  '............CCCCCCCCCCCCCCCCCCCC...................',
+  '.............CCCCCCCCCCCCCCCCCCC........|..........',
+  '............CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.........',
   '...............CCCCCCCCCCCCCCCCCCCCCCCCCC..........',
   '................CCCCCCCCCCCCCCC...CCCCCCCCCCCC.....',
   '................CCCCCCCCCCCCCCC....CCCCCCCC........',
@@ -56,13 +56,14 @@ var __ISLANDS__ = {
 
 var __INITIAL_WORDS__ = {
   'A': 'zelere',
-  'B': 'acaba',
-  'C': 'lulere',
+  'B': 'zelere',
+  'C': 'zelere',
 };
 
 var __GATES__ = {
    '=': ['A', 'B'],
    '|': ['B', 'C'],
+   '-': ['A', 'C'],
 };
 
 function mooreNeighborhood(index) {
