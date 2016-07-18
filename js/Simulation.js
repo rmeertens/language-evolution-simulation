@@ -87,7 +87,7 @@ Simulation.prototype.drawIslands = function () {
       rect.setAttribute('fill', __ISLANDS__[islandKey][1]);
 
       if (isGate(x, y)) {
-        rect.setAttribute('fill', 'gray');        
+        rect.setAttribute('fill', '#E0E0E0');
       };
 
       fragment.appendChild(rect);
@@ -114,7 +114,7 @@ Simulation.prototype.drawBridges = function () {
     line.setAttribute('x2', target[0] * gridPixelSize + center);
     line.setAttribute('y2', target[1] * gridPixelSize + center);
     line.setAttribute('stroke-width', 1);
-    line.setAttribute('stroke', 'gray');
+    line.setAttribute('stroke', '#E0E0E0');
     canvas.appendChild(line);
   });
 };
