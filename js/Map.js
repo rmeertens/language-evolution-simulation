@@ -56,8 +56,8 @@ var __ISLANDS__ = {
 
 var __INITIAL_WORDS__ = {
   'A': 'zelere',
-  'B': 'acaba',
-  'C': 'lulere',
+  'B': 'zelere',
+  'C': 'zelere',
 };
 
 var __GATES__ = {
